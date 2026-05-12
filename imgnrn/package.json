@@ -1,0 +1,29 @@
+{
+  "name": "imgnrn-backend",
+  "version": "1.0.0",
+  "description": "YOLOv8 Object Detection API Server",
+  "main": "server.py",
+  "scripts": {
+    "start": "python server.py",
+    "dev": "python server.py",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yolo",
+    "object-detection",
+    "computer-vision"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "flask": "^2.3.0",
+    "flask-cors": "^4.0.0",
+    "ultralytics": "^8.0.0",
+    "opencv-python": "^4.8.0",
+    "numpy": "^1.24.0",
+    "Pillow": "^9.5.0"
+  },
+  "engines": {
+    "python": ">=3.8"
+  }
+}

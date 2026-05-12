@@ -1,0 +1,19 @@
+# YOLOv8 Object Detection - Dependencies
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+pillow>=9.5.0
+torch>=2.0.0
+torchvision>=0.15.0
+tqdm>=4.65.0
+protobuf>=3.20.0
+
+# API Server
+flask>=2.3.0
+flask-cors>=4.0.0
+onnxruntime>=1.15.0
+
+# Additional tools
+requests>=2.31.0
+python-dotenv>=1.0.0

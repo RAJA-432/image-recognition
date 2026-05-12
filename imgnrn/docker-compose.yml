@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  yolov8:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: yolov8-detection
+    runtime: nvidia  # Remove this line for CPU-only
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./models:/app/models
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
